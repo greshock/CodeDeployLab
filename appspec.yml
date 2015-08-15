@@ -23,9 +23,6 @@ hooks:
   # revision.
   #
   ApplicationStop:
-    - location: scripts/deregister_from_elb.sh
-      timeout: 120
-
     - location: scripts/stop_httpd.sh
       timeout: 120
 
