@@ -20,12 +20,11 @@ hooks:
   #
   # The AppSpec file and scripts used for this deployment lifecycle
   # event are from the last successfully deployed application
-  # revision.
+  #revision.
   #
   ApplicationStop:
     - location: scripts/stop_httpd.sh
       timeout: 120
-
   #
   # BeforeInstall - you can use the BeforeInstall deployment lifecycle
   # event for preinstall tasks such as decrypting files and creating a
@@ -34,7 +33,6 @@ hooks:
   BeforeInstall:
     - location: scripts/rm_site.sh
       timeout: 120
-
   #
   # AfterInstall - you can use the AfterInstall deployment lifecycle
   # event for tasks such as configuring your application or changing
@@ -43,7 +41,6 @@ hooks:
   AfterInstall:
     - location: scripts/change_perms.sh
       timeout: 120
-
   #
   # ApplicationStart - you typically use the ApplicationStart
   # deployment lifecycle event to restart services that were stopped
@@ -52,7 +49,6 @@ hooks:
   ApplicationStart:
     - location: scripts/start_httpd.sh
       timeout: 120
-
   #
   # ValidateService - ValidateService is the last deployment lifecycle
   # event and is an opportunity to verify that the deployment
