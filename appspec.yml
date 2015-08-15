@@ -56,9 +56,6 @@ hooks:
     - location: scripts/start_httpd.sh
       timeout: 120
 
-    - location: scripts/register_with_elb.sh
-      timeout: 120
-
   #
   # ValidateService - ValidateService is the last deployment lifecycle
   # event and is an opportunity to verify that the deployment
