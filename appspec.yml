@@ -25,7 +25,7 @@ hooks:
   #
   ApplicationStop:
       location: scripts/stop_httpd.sh
-      timeout: 120
+      timeout: 180
   #
   # BeforeInstall - you can use the BeforeInstall deployment lifecycle
   # event for preinstall tasks such as decrypting files and creating a
